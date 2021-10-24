@@ -4,4 +4,4 @@ FROM dclong/rust
 
 # evcxr_jupyter
 # RUN cargo install --force evcxr_jupyter
-RUN cargo install --force --git https://github.com/google/evcxr.git evcxr_jupyter
+RUN cargo install --force --git https://github.com/google/evcxr.git --branch main evcxr_jupyter
