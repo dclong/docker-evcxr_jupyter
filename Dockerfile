@@ -4,5 +4,6 @@ FROM dclong/rust
 
 # evcxr_jupyter
 #RUN cargo install --git https://github.com/google/evcxr.git --branch main evcxr_jupyter
-RUN cargo install evcxr_jupyter
+RUN cargo install evcxr_jupyter \
+    && /root/.cargo/bin/evcxr_jupyter --install
 
